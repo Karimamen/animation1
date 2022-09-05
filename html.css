@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #607d86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+.cup {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 15%);
+}
+
+.plat {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: #faf7f7;
+    top: 105px;
+    left: -60px;
+    transform: rotatex(62deg);
+    border-radius: 50%;
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 35px 35px rgb(0 0 0 / 37%);
+}
+
+.cover {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 90%;
+    background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+    top: 10px;
+    left: 15px;
+    border-radius: 50%;
+    box-shadow: 0 40px 40px rgb(0 0 0 / 15%) inset;
+}
+
+.handle {
+    position: absolute;
+    width: 160px;
+    height: 195px;
+    top: 50px;
+    right: -66px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: #dddddd #dddddd transparent transparent;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 30px 30px rgb(0 0 0 / 15%);
+}
+
+.top {
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+    transform: rotatex(215deg);
+    -webkit-transform: rotatex(215deg);
+    -moz-transform: rotatex(215deg);
+    -ms-transform: rotatex(215deg);
+    -o-transform: rotatex(215deg);
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 15%);
+}
+
+.coffe {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: 70px;
+    left: 10px;
+    background: #472f26;
+    border-radius: 50%;
+    box-shadow: 0 30px 30px rgb(0 0 0 / 15%);
+}
+
+.container-two {
+    display: flex;
+    padding: 0 30px;
+}
+
+.container-two span {
+    position: relative;
+    width: 30px;
+    height: 120px;
+    background: white;
+    margin: 9px;
+    bottom: 30px;
+    border-radius: 50%;
+    transform: scalex(2);
+    animation: smoke 5s linear infinite;
+    filter: blur(6px);
+    animation-delay: -1s;
+    -webkit-filter: blur(6px);
+    -webkit-animation: smoke 5s linear infinite;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation-delay: .5s;
+    -webkit-transform: scalex(2);
+    -moz-transform: scalex(2);
+    -ms-transform: scalex(2);
+    -o-transform: scalex(2);
+}
+
+.container-two .one {
+    animation-name: smoke;
+    animation-delay: .5s;
+}
+
+.container-two .two {
+    animation-name: smoke;
+    animation-delay: .5s;
+}
+
+.container-two .three {
+    animation-name: smoke;
+    animation-delay: .1s;
+}
+
+.container-two .four {
+    animation-name: smoke;
+    animation-delay: 1s;
+}
+
+.container-two .five {
+    animation-name: smoke;
+    animation-delay: 1.5s;
+}
+
+.container-two .six {
+    animation-name: smoke;
+    animation-delay: 3s;
+}
+
+.container-two .seven {
+    animation-name: smoke;
+    animation-delay: 3s;
+}
+
+.container-two .eight {
+    animation-name: smoke;
+    animation-delay: 4s;
+}
+
+.container-two .nine {
+    animation-name: smoke;
+    animation-delay: 4s;
+}
+
+.container-two .ten {
+
+    animation-name: smoke;
+    animation-delay: 2.5s;
+}
+
+.container-two .te {
+    animation-name: smoke;
+    animation-delay: 3s;
+}
+
+.container-two .end {
+    animation-name: smoke;
+    animation-delay: 3s;
+}
+
+
+@keyframes smoke {
+
+    /* 50% {
+        transform: translateY(150px) scalex(5);
+        -webkit-transform: translateY(150px) scalex(5);
+        -moz-transform: translateY(150px) scalex(5);
+        -ms-transform: translateY(150px) scalex(5);
+        -o-transform: translateY(150px) scalex(5);
+} */
+
+    100% {
+        transform: translateY(500px) scale(5);
+        -o-transform: translateY(500px) scale(5);
+        -webkit-transform: translateY(500px) scale(5);
+        -moz-transform: translateY(500px) scale(5);
+        -ms-transform: translateY(500px) scale(5);
+    }
+}
